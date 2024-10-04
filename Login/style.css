@@ -1,0 +1,58 @@
+/* تنسيق عام للصفحة */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* تنسيق نموذج تسجيل الدخول */
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* تنسيق حقول الإدخال */
+.login div {
+    margin-bottom: 15px;
+}
+
+.login label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* تنسيق رسالة الخطأ */
+#error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* تنسيق زر تسجيل الدخول */
+#button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #45a049;
+}

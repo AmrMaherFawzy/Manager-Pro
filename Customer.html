@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Customer/style2.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Manager Pro2.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Customer</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a href="LogIn.html">LogIn</a>
+            <a href="Customer.html">Customer</a>
+            <a href="Sales.html">Sales</a>
+            <a href="Inventory.html">Inventory</a>
+            <a href="Products.html">Products</a>
+            <a href="Invoice.html">Invoice</a>
+            <a href="Employee.html">Employee</a>
+            <a href="Department.html">Department</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="input">
+            <input placeholder="Customer Name" type="text" id="customername">
+            <div class="price">
+                <input type="tel" id="phoneNumber" placeholder="Phone Number">
+                <input type="number" id="edge" placeholder="Edge">
+            </div>
+            <input placeholder="Email" type="email" id="Email">
+            <input placeholder="Address" type="text" id="Address">
+            <button onclick="submitButton()" id="submit">Create</button>
+        </div>
+        <div id="output"></div>
+        <div class="output">
+            <div class="searchBlock">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+                <div class="btnsearch">
+                    <button onclick="searchMood('name')" id="searchNameButton">Search</button>
+                </div>
+            </div>
+            <div id="deleteAll"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Customer Name</th>
+                        <th>Phone Number</th>
+                        <th>Edge</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Customer/your-script.js"></script>
+</body>
+</html>

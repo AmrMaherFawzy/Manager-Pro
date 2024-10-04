@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="User/StyleSheet1.css" rel="stylesheet" />
+    <link rel="stylesheet" href="Opening screen/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/Manager Pro2.png">
+    <title>Create User</title>
+</head>
+<body>
+    <div id="splash-screen">
+        <img src="img/Manager Pro.gif" />
+    </div>
+    <div id="content" style="display: none;">
+        <form class="login" action="LogIn.html" method="post">
+            <label>UserName</label>
+            <input type="text" id="UserName" name="name" value="" />
+            <label>E_mail</label>
+            <input type="email" id="email" name="name" value="" />
+            <label>phone</label>
+            <input type="tel" id="phone" name="name" value="" />
+            <label>Password</label>
+            <input type="password" id="Password" name="name" value="" />
+            <br />
+            <button type="button" id="button" onclick="validateCreateUser(); window.location.href = 'LogIn.html';">Create</button>
+        </form>
+    </div>
+    <script src="User/JavaScript.js"></script>
+    <script src="Opening screen/JavaScript.js" defer></script>
+</body>
+</html>
